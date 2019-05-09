@@ -1,0 +1,11 @@
+<div class="user-card">
+  <span class="delete-btn" tooltip="Delete" (click)="onDeleteClicked()">X</span>
+  <div class="image-holder">
+    <img class="user-img" [src]="getUserImage()" alt="profilePic">
+  </div>
+  <div class="info-holder">
+    <span>Name: </span><span>{{ user.name }}</span>
+    <br>
+    <span>Username: </span><span>{{ user.username }}</span>
+  </div>
+</div>

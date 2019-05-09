@@ -1,0 +1,10 @@
+<div class="users-holder">
+  <div class="row">
+    <div class="user-card col-4 mt-3 mb-3" *ngFor="let user of users; let index = index">
+      <app-user-card 
+        [user]="user" 
+        [index]="index"
+        (delete)="onItemDeleted($event)"></app-user-card>
+    </div>
+  </div>
+</div>
